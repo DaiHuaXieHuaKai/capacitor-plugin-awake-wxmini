@@ -4,7 +4,7 @@ declare module "@capacitor/core" {
   }
 }
 
-declare interface AwakeOptions {
+export interface AwakeOptions {
         appId: string
         miniId:string
         path:string
