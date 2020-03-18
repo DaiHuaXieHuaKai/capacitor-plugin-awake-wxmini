@@ -8,7 +8,7 @@ export interface AwakeOptions {
         appId: string
         miniId:string
         path:string
-        type:string
+        type:number
 }
 
 export interface AwakeWxMiniPluginPlugin {

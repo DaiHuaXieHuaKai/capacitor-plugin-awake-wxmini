@@ -3,7 +3,7 @@ declare module "@capacitor/core" {
         AwakeWxMiniPlugin: AwakeWxMiniPluginPlugin;
     }
 }
-declare interface AwakeOptions {
+export interface AwakeOptions {
     appId: string;
     miniId: string;
     path: string;
@@ -12,4 +12,3 @@ declare interface AwakeOptions {
 export interface AwakeWxMiniPluginPlugin {
     awake(options: AwakeOptions): Promise<any>;
 }
-export {};

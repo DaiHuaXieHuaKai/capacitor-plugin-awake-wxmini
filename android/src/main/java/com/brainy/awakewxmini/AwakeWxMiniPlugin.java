@@ -31,10 +31,6 @@ public class AwakeWxMiniPlugin extends Plugin {
             call.error("miniId is required");
             return;
         }
-        if (path == "") {
-            call.error("path is required");
-            return;
-        }
         IWXAPI api = WXAPIFactory.createWXAPI(getContext(), appId);
         WXLaunchMiniProgram.Req req = new WXLaunchMiniProgram.Req();
         req.userName = miniId;
