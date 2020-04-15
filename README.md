@@ -51,9 +51,9 @@ returns: PluginListenerHandle
 
 interface AwakeOptions {
     appId: string;
-    // 应用id
+    // 应用id,微信开放平台申请的
     miniId:string;
-    // 微信小程序原始Id
+    // 微信小程序原始Id，gh_开头
     path:string;
     // 小程序打开路径，不填则为小程序默认打开路径，可通过路径传参。如："/path?a=1&b=2"
     type:number;
