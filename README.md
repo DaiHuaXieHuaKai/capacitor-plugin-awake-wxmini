@@ -31,17 +31,6 @@ options:AwakeOptions
 
 return:void
 
-### addListener
-
-```
-addListener(eventName: string, listenerFunc: Function):PluginListenerHandle 
-```
-
-eventName:string = "launchResponse"
-
-listenerFunc Function
-
-returns: PluginListenerHandle
 
 ### Interface Used
 
@@ -66,10 +55,6 @@ interface AwakeOptions {
 
 ```markdown
     import { Plugins } from '@capacitor/core';
-
-    Plugins.AwakeWxMiniPlugin.addListener("launchResponse", (res) => {
-        console.log(res)
-    })
 
     Plugins.AwakeWxMiniPlugin.awake({
         appId: "",
